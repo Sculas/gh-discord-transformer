@@ -2,7 +2,7 @@ pub struct Error(pub &'static str);
 
 pub type Result<T> = std::result::Result<T, Error>;
 
-pub async fn notify_discord(username: &str, profile_url: &str, usd_donated: f64) -> Result<()> {
+pub async fn notify_discord(username: &str, profile_url: &str, usd_donated: i64) -> Result<()> {
     let webhook_url = std::env::var("DISCORD_WEBHOOK_URL").map_err(|_| Error("no-webhook-url"))?;
     let thread_id = std::env::var("DISCORD_WEBHOOK_TID").ok();
     let client = reqwest::Client::builder()

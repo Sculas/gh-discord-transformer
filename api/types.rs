@@ -20,5 +20,5 @@ pub struct Sponsor {
 
 #[derive(Debug, Deserialize)]
 pub struct Tier {
-    pub monthly_price_in_dollars: f64,
+    pub monthly_price_in_dollars: i64,
 }
