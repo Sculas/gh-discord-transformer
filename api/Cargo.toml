@@ -1,5 +1,5 @@
 [package]
-name = "sponsor-shields"
+name = "gh-discord-transformer"
 version = "0.1.0"
 authors = ["Sculas <contact@sculas.xyz>"]
 edition = "2021"
